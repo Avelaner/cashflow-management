@@ -1,2 +1,2 @@
 # cashflow-management
-cashflow management system for Sir Perter Aersar
+Professional Finance Management System built with PHP
