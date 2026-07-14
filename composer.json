@@ -1,0 +1,21 @@
+{
+    "name": "avela/cashflow-management",
+    "description": "Professional Cashflow Management System",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Avela Nder Marcel"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^7.1",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
