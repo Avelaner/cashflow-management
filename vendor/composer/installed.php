@@ -3,7 +3,7 @@
         'name' => 'avela/cashflow-management',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f3d05d482dcad5e5e9efbd778da36d15fd653187',
+        'reference' => '51eea50d0c00b56cbd8f43f38be3b6943e797936',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'avela/cashflow-management' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f3d05d482dcad5e5e9efbd778da36d15fd653187',
+            'reference' => '51eea50d0c00b56cbd8f43f38be3b6943e797936',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

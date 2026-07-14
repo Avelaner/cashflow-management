@@ -1,0 +1,162 @@
+/* ==========================================================
+   AUTH PAGE
+========================================================== */
+
+:root{
+    --primary:#0B1F3A;
+    --secondary:#163E73;
+    --accent:#2F80ED;
+    --background:#F4F7FA;
+    --white:#ffffff;
+    --text:#2d3436;
+    --border:#dfe6e9;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background:var(--background);
+    color:var(--text);
+}
+
+.login-page{
+    background:var(--background);
+}
+
+.branding-panel{
+    background:linear-gradient(135deg,#08182f,#163E73);
+    color:#fff;
+    padding:80px;
+}
+
+.branding-content{
+    max-width:520px;
+    margin:auto;
+}
+
+.branding-content h1{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.branding-content p{
+    font-size:1.05rem;
+    line-height:1.8;
+    opacity:.95;
+}
+
+.feature-list{
+    list-style:none;
+    margin:50px 0 0;
+    padding:0;
+}
+
+.feature-list li{
+    margin-bottom:18px;
+    font-size:1rem;
+}
+
+.feature-list i{
+    color:#5cd65c;
+    margin-right:10px;
+}
+
+.login-card{
+    width:100%;
+    max-width:470px;
+    background:#fff;
+    border-radius:18px;
+    padding:45px;
+}
+
+.login-card h2{
+    font-weight:700;
+    color:var(--primary);
+}
+
+.login-card .text-muted{
+    font-size:.95rem;
+}
+
+.form-label{
+    font-weight:600;
+}
+
+.form-control{
+    height:50px;
+    border-radius:10px;
+}
+
+.input-group-text{
+    border-radius:10px 0 0 10px;
+    background:#fff;
+}
+
+.input-group .btn{
+    border-radius:0 10px 10px 0;
+}
+
+.form-control:focus{
+    box-shadow:none;
+    border-color:var(--accent);
+}
+
+.btn-primary{
+    background:var(--secondary);
+    border:none;
+    height:52px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:var(--primary);
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+.mobile-logo{
+    display:none;
+}
+
+@media (max-width:991px){
+
+    .branding-panel{
+        display:none !important;
+    }
+
+    .login-card{
+        margin:20px;
+        padding:30px 20px;
+        border-radius:15px;
+    }
+
+    .mobile-logo{
+        display:block;
+        text-align:center;
+        margin-bottom:25px;
+    }
+
+    .mobile-logo img{
+        width:80px;
+        height:auto;
+    }
+
+    .login-card h2{
+        font-size:2rem;
+    }
+
+}

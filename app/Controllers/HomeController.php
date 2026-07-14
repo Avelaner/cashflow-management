@@ -10,8 +10,13 @@ class HomeController extends Controller
 {
     public function index(): void
     {
-        $this->view('home', [
-            'title' => 'Cashflow Management System'
-        ]);
+        $this->view(
+            'home/index',
+            [
+                'title'   => 'Cashflow Management System',
+                'pageCss' => 'landing'
+            ],
+            'guest'
+        );
     }
 }
