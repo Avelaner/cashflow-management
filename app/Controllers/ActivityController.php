@@ -142,7 +142,6 @@
 
 <?php
 
-
 // Defensive initialization to prevent TypeError if $activities is null or undefined
 $activitiesList = is_array($activities ?? null) ? $activities : [];
 
