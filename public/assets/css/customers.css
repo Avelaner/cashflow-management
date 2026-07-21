@@ -1,0 +1,771 @@
+/* ======================================================
+   CUSTOMERS PAGE
+====================================================== */
+
+.customer-page{
+    padding:30px;
+    animation:fadeIn .3s ease;
+}
+
+/* ======================================================
+   PAGE HEADER
+====================================================== */
+
+.customer-page h2{
+    font-size:2rem;
+    font-weight:700;
+    color:#0B1F3A;
+}
+
+.customer-page p{
+    color:#6c757d;
+}
+
+/* ======================================================
+   STATS CARDS
+====================================================== */
+
+.customer-page .stats-card{
+    background:#fff;
+    border-radius:18px;
+    padding:22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:130px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.customer-page .stats-card:hover{
+    transform:translateY(-5px);
+}
+
+.customer-page .stats-card h3{
+    font-size:30px;
+    margin:8px 0;
+    font-weight:700;
+}
+
+.customer-page .stats-card small{
+    color:#6c757d;
+}
+
+.customer-page .stats-card span{
+    display:block;
+    font-size:13px;
+    margin-top:6px;
+}
+
+.customer-page .stats-card i:last-child{
+    font-size:42px;
+    opacity:.12;
+}
+
+/* Card Colors */
+
+.customer-page .customers{
+    border-left:5px solid #0d6efd;
+}
+
+.customer-page .deposits{
+    border-left:5px solid #198754;
+}
+
+.customer-page .withdrawals{
+    border-left:5px solid #ffc107;
+}
+
+.customer-page .expenses{
+    border-left:5px solid #dc3545;
+}
+
+/* ======================================================
+   FILTER CARD
+====================================================== */
+
+.customer-page .card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.customer-page .card-header{
+    background:#fff;
+    border-bottom:1px solid #edf0f5;
+    border-radius:18px 18px 0 0 !important;
+    padding:18px 24px;
+}
+
+.customer-page .card-body{
+    padding:24px;
+}
+
+/* ======================================================
+   FORM
+====================================================== */
+
+.customer-page .form-control,
+.customer-page .form-select{
+    border-radius:10px;
+    min-height:46px;
+    border:1px solid #dee2e6;
+}
+
+.customer-page .form-control:focus,
+.customer-page .form-select:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 0 .15rem rgba(13,110,253,.15);
+}
+
+/* ======================================================
+   TABLE
+====================================================== */
+
+.customer-table th{
+    background:#f8f9fb;
+    color:#0B1F3A;
+    font-weight:600;
+    border:none;
+    padding:16px;
+}
+
+.customer-table td{
+    padding:16px;
+    vertical-align:middle;
+}
+
+.customer-table tbody tr{
+    transition:.2s;
+}
+
+.customer-table tbody tr:hover{
+    background:#f8fbff;
+}
+
+/* ======================================================
+   AVATAR
+====================================================== */
+
+.customer-avatar{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #eef3ff;
+}
+
+/* ======================================================
+   BADGES
+====================================================== */
+
+.customer-page .badge{
+    padding:7px 12px;
+    font-weight:500;
+    border-radius:30px;
+}
+
+/* ======================================================
+   BUTTON GROUP
+====================================================== */
+
+.customer-page .btn-group .btn{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ======================================================
+   EMPTY STATE
+====================================================== */
+
+.customer-page .fa-users.fa-3x{
+    color:#d0d7e3;
+}
+
+/* ======================================================
+   ANIMATION
+====================================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ======================================================
+   CUSTOMER CREATE PAGE
+====================================================== */
+
+.customer-create-page{
+    padding:30px;
+}
+
+/* Page Header */
+
+.customer-page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.customer-page-header h2{
+    color:#0B1F3A;
+}
+
+/* Form Card */
+
+.customer-form-card{
+    border:0;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.customer-form-card .card-header{
+    padding:22px 26px;
+    background:#fff;
+    border-bottom:1px solid #edf0f5;
+}
+
+.customer-form-card .card-body{
+    padding:28px;
+}
+
+/* Section Icon */
+
+.form-section-icon{
+    width:44px;
+    height:44px;
+    border-radius:12px;
+    background:#eef4ff;
+    color:#0d6efd;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+}
+
+/* Form */
+
+.customer-create-page .form-label{
+    font-weight:600;
+    color:#344054;
+    margin-bottom:8px;
+}
+
+.customer-create-page .input-group-text{
+    background:#f8fafc;
+    border-color:#dee2e6;
+    color:#667085;
+    min-width:46px;
+    justify-content:center;
+}
+
+.customer-create-page .form-control,
+.customer-create-page .form-select{
+    min-height:48px;
+    border-radius:0 10px 10px 0;
+}
+
+.customer-create-page textarea.form-control{
+    min-height:120px;
+}
+
+.customer-create-page .form-control:focus,
+.customer-create-page .form-select:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 0 .15rem rgba(13,110,253,.12);
+}
+
+/* Profile Image */
+
+.customer-image-wrapper{
+    width:180px;
+    height:180px;
+    margin:auto;
+    position:relative;
+}
+
+.customer-image-wrapper img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #f1f5f9;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.image-upload-button{
+    position:absolute;
+    right:5px;
+    bottom:5px;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#0d6efd;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    border:4px solid #fff;
+    transition:.2s;
+}
+
+.image-upload-button:hover{
+    transform:scale(1.08);
+}
+
+/* Hide actual file input visually */
+
+.customer-create-page #picture{
+    cursor:pointer;
+}
+
+/* Info Card */
+
+.customer-info-card{
+    padding:20px;
+    border-radius:18px;
+    background:#eef4ff;
+    color:#344054;
+}
+
+.customer-info-card > div > i{
+    color:#0d6efd;
+    font-size:20px;
+}
+
+/* Actions */
+
+.customer-form-actions{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .customer-create-page{
+        padding:15px;
+    }
+
+    .customer-page-header{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .customer-page-header .btn{
+        width:100%;
+    }
+
+    .customer-form-actions{
+        flex-direction:column-reverse;
+    }
+
+    .customer-form-actions .btn{
+        width:100%;
+    }
+
+}
+
+/* =====================================================
+   CUSTOMER PROFILE
+===================================================== */
+
+.customer-profile-image {
+
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #eef4ff;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+}
+
+/* ======================================================
+   CUSTOMER PROFILE
+====================================================== */
+
+.customer-profile-card{
+    background:#fff;
+    border:0;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    overflow:hidden;
+}
+
+.customer-profile-card .card-header{
+    padding:20px 24px;
+    background:#fff;
+    border-bottom:1px solid #edf0f5;
+}
+
+.customer-profile-card .card-body{
+    padding:28px;
+}
+
+
+/* PROFILE IMAGE */
+
+.customer-profile-image{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:7px solid #f1f5f9;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+
+/* CONTACT INFORMATION */
+
+.customer-contact-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.customer-contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+}
+
+.customer-contact-item > i{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    background:#eef4ff;
+    color:#0d6efd;
+}
+
+.customer-contact-item small{
+    display:block;
+    margin-bottom:3px;
+}
+
+.customer-contact-item strong{
+    display:block;
+    word-break:break-word;
+}
+
+
+/* SUMMARY CARDS */
+
+.customer-summary-card{
+    min-height:140px;
+    padding:22px;
+    border-radius:18px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.customer-summary-card small{
+    color:#6c757d;
+}
+
+.customer-summary-card h3{
+    margin-top:10px;
+    font-size:22px;
+    font-weight:700;
+}
+
+.customer-summary-card > i{
+    font-size:38px;
+    opacity:.15;
+}
+
+
+/* SUMMARY COLORS */
+
+.customer-summary-card.deposits{
+    border-left:5px solid #198754;
+}
+
+.customer-summary-card.withdrawals{
+    border-left:5px solid #dc3545;
+}
+
+.customer-summary-card.balance{
+    border-left:5px solid #0d6efd;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .customer-page-header{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .customer-page-header .d-flex{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .customer-page-header .btn{
+        width:100%;
+    }
+
+    .customer-profile-image{
+        width:140px;
+        height:140px;
+    }
+
+    .customer-summary-card{
+        min-height:120px;
+    }
+
+}
+
+/* ======================================================
+   EDIT CUSTOMER PAGE
+====================================================== */
+
+.customer-create-page{
+    padding:30px;
+}
+
+.customer-form-card{
+    border:0;
+    border-radius:18px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.customer-form-card .card-header{
+    padding:22px 26px;
+    background:#fff;
+    border-bottom:1px solid #edf0f5;
+}
+
+.customer-form-card .card-body{
+    padding:28px;
+}
+
+.customer-form-card .form-label{
+    font-weight:600;
+    color:#344054;
+    margin-bottom:8px;
+}
+
+.customer-form-card .input-group-text{
+    background:#f8fafc;
+    border-color:#dee2e6;
+    color:#667085;
+    min-width:46px;
+    justify-content:center;
+}
+
+.customer-form-card .form-control,
+.customer-form-card .form-select{
+    min-height:48px;
+}
+
+.customer-form-card textarea.form-control{
+    min-height:120px;
+}
+
+.customer-form-card .form-control:focus,
+.customer-form-card .form-select:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 0 .15rem rgba(13,110,253,.12);
+}
+
+
+/* IMAGE */
+
+.customer-image-wrapper{
+    width:180px;
+    height:180px;
+    margin:auto;
+    position:relative;
+}
+
+.customer-image-wrapper img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #f1f5f9;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.image-upload-button{
+    position:absolute;
+    right:5px;
+    bottom:5px;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#0d6efd;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    border:4px solid #fff;
+    transition:.2s;
+}
+
+.image-upload-button:hover{
+    transform:scale(1.08);
+}
+
+
+/* ACTIONS */
+
+.customer-form-actions{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+}
+
+@media(max-width:768px){
+
+    .customer-create-page{
+        padding:15px;
+    }
+
+    .customer-form-actions{
+        flex-direction:column-reverse;
+    }
+
+    .customer-form-actions .btn{
+        width:100%;
+    }
+
+}
+
+/* ======================================================
+   DEPOSIT / TRANSFER CREATE PAGE
+====================================================== */
+
+.deposit-create-page {
+    padding: 30px;
+    animation: fadeIn .3s ease;
+}
+
+.deposit-create-page .customer-page-header h2 {
+    color: #0B1F3A;
+}
+
+.deposit-create-page .customer-form-card {
+    border: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .06);
+}
+
+.deposit-create-page .customer-form-card .card-header {
+    padding: 22px 26px;
+    background: #fff;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.deposit-create-page .customer-form-card .card-body {
+    padding: 28px;
+}
+
+.deposit-create-page .form-label {
+    font-weight: 600;
+    color: #344054;
+    margin-bottom: 8px;
+}
+
+.deposit-create-page .form-control,
+.deposit-create-page .form-select {
+    min-height: 48px;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.deposit-create-page textarea.form-control {
+    min-height: 120px;
+}
+
+.deposit-create-page .form-control:focus,
+.deposit-create-page .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 .15rem rgba(13, 110, 253, .12);
+}
+
+.deposit-create-page .input-group-text {
+    background: #f8fafc;
+    border-color: #dee2e6;
+    color: #667085;
+    font-weight: 600;
+}
+
+.deposit-create-page .form-section-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #eef4ff;
+    color: #0d6efd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.deposit-create-page .customer-info-card {
+    padding: 20px;
+    border-radius: 18px;
+    background: #eef4ff;
+    color: #344054;
+}
+
+.deposit-create-page .customer-info-card > div > i {
+    color: #0d6efd;
+    font-size: 20px;
+}
+
+.deposit-create-page .btn-lg {
+    min-height: 52px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+    .deposit-create-page {
+        padding: 15px;
+    }
+
+}

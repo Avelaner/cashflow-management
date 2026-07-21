@@ -1,25 +1,21 @@
-<?php require 'header.php'; ?>
+<?php require BASE_PATH . '/app/Views/layouts/header.php'; ?>
 
-<?php require 'navbar.php'; ?>
+<div class="wrapper">
 
-<div class="container-fluid">
+    <?php require BASE_PATH . '/app/Views/layouts/sidebar.php'; ?>
 
-    <div class="row">
+    <div class="main">
 
-        <div class="col-md-2 p-0">
+        <?php require BASE_PATH . '/app/Views/layouts/navbar.php'; ?>
 
-            <?php require 'sidebar.php'; ?>
-
-        </div>
-
-        <div class="col-md-10">
+        <main class="content">
 
             <?= $content ?>
 
-        </div>
+        </main>
+
+        <?php require BASE_PATH . '/app/Views/layouts/footer.php'; ?>
 
     </div>
 
 </div>
-
-<?php require 'footer.php'; ?>

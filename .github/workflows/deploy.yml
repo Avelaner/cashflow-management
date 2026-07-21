@@ -1,0 +1,27 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main  # Adjust if your primary branch is named master
+
+jobs:
+  web-deploy:
+    name: Sync Files to cPanel
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v4
+
+      - name: Sync via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Exclude files that shouldn't upload to cPanel
+          exclude: |
+            **/.git*
+            **/.git*/**
+            README.md
+            Database.php.php

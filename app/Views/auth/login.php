@@ -48,7 +48,7 @@
 
                     </div>
 
-                    <form action="#" method="POST">
+                    <form action="/cashflow-management/public/login" method="POST">
 
                         <div class="mb-3">
 
@@ -64,6 +64,7 @@
 
                                 <input
                                     type="email"
+                                    name="email"
                                     class="form-control"
                                     placeholder="Enter your email"
                                     required>
@@ -86,6 +87,7 @@
 
                                 <input
                                     id="password"
+                                    name="password"
                                     type="password"
                                     class="form-control"
                                     placeholder="Enter your password"

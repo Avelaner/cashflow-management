@@ -1,0 +1,238 @@
+/* =========================================
+   CUSTOMER PROFILE PAGE
+   ========================================= */
+
+
+/* Profile Header */
+
+.customer-profile-header {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+
+.customer-profile-header .card-body {
+    padding: 35px;
+}
+
+
+
+/* Profile Picture */
+
+.customer-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+}
+
+
+
+
+
+/* Customer Name */
+
+.customer-name {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+
+.customer-id {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+
+
+
+/* Action Buttons */
+
+.profile-actions .btn {
+
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-weight: 600;
+
+}
+
+
+.profile-actions .btn i {
+
+    margin-right: 5px;
+
+}
+
+
+
+
+
+/* Financial Cards */
+
+.finance-card {
+
+    border-radius: 16px;
+    transition: all .3s ease;
+
+}
+
+
+.finance-card:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+.finance-title {
+
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 10px;
+
+}
+
+
+.finance-value {
+
+    font-size: 26px;
+    font-weight: 700;
+
+}
+
+
+
+
+
+/* Balance Highlight */
+
+.balance-card {
+
+    background: linear-gradient(
+        135deg,
+        #0f766e,
+        #14b8a6
+    );
+
+    color:white;
+
+}
+
+
+.balance-card .finance-title {
+
+    color:#d1fae5;
+
+}
+
+
+
+
+
+/* Information Card */
+
+.info-section {
+
+    padding:20px;
+
+}
+
+
+.info-section h5 {
+
+    font-weight:700;
+    margin-bottom:20px;
+
+}
+
+
+.info-section p {
+
+    color:#475569;
+    margin-bottom:12px;
+
+}
+
+
+.info-section strong {
+
+    color:#1e293b;
+
+}
+
+
+
+
+
+/* Tabs */
+
+.customer-tabs .nav-link {
+
+    font-weight:600;
+    color:#64748b;
+    padding:15px 20px;
+
+}
+
+
+
+.customer-tabs .nav-link.active {
+
+    color:#0f766e;
+    border-bottom:3px solid #0f766e;
+
+}
+
+
+
+
+
+/* Empty State */
+
+.empty-state {
+
+    text-align:center;
+    padding:40px;
+    color:#94a3b8;
+
+}
+
+
+
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+
+    .customer-name {
+
+        font-size:24px;
+
+    }
+
+
+
+    .profile-actions {
+
+        margin-top:20px;
+        text-align:left!important;
+
+    }
+
+
+
+    .profile-actions .btn {
+
+        width:100%;
+        margin-bottom:10px;
+
+    }
+
+
+}

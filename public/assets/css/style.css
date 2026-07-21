@@ -1,0 +1,211 @@
+/* =====================================================
+   Cashflow Management System
+   Global Base Styles
+===================================================== */
+
+:root{
+    --primary:#0d6efd;
+    --primary-dark:#0b5ed7;
+    --success:#198754;
+    --warning:#ffc107;
+    --danger:#dc3545;
+    --info:#0dcaf0;
+
+    --dark:#1e293b;
+    --gray:#6c757d;
+    --light:#f8f9fa;
+    --border:#e9ecef;
+    --white:#ffffff;
+
+    --radius:12px;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --transition:.3s ease;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f6fb;
+    color:#212529;
+    line-height:1.6;
+}
+
+/* Links */
+
+a{
+    color:inherit;
+    text-decoration:none;
+    transition:var(--transition);
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+/* Images */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* Lists */
+
+ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+/* Typography */
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:600;
+    color:var(--dark);
+    margin-bottom:.75rem;
+}
+
+p{
+    margin-bottom:1rem;
+    color:#6b7280;
+}
+
+/* Buttons */
+
+.btn{
+    border-radius:10px;
+    transition:.25s;
+    font-weight:500;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* Cards */
+
+.card{
+    border:none;
+    border-radius:14px;
+    box-shadow:var(--shadow);
+}
+
+/* Forms */
+
+.form-control,
+.form-select{
+    border-radius:10px;
+    min-height:48px;
+    border:1px solid #dce1e7;
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:none;
+    border-color:var(--primary);
+}
+
+/* Tables */
+
+.table{
+    vertical-align:middle;
+}
+
+.table thead{
+    background:#f8f9fa;
+}
+
+/* Badges */
+
+.badge{
+    padding:.55rem .75rem;
+    border-radius:20px;
+}
+
+/* Shadows */
+
+.shadow-soft{
+    box-shadow:var(--shadow);
+}
+
+/* Rounded */
+
+.rounded-xl{
+    border-radius:16px;
+}
+
+/* Section spacing */
+
+.section{
+    padding:60px 0;
+}
+
+/* Page Titles */
+
+.page-title{
+    font-weight:700;
+    color:var(--dark);
+    margin-bottom:5px;
+}
+
+.page-subtitle{
+    color:#6b7280;
+    font-size:.95rem;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#bfc6d4;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#98a2b3;
+}
+
+/* =====================================================
+   APPLICATION LAYOUT
+===================================================== */
+
+.wrapper {
+
+    min-height: 100vh;
+
+}
+
+
+.main {
+
+    margin-left: 260px;
+
+    min-height: 100vh;
+
+    background: #f6f8fc;
+
+    transition: margin-left .3s ease;
+
+}
+
+
+.content {
+
+    min-height: calc(100vh - 76px);
+
+    padding: 30px;
+
+}
