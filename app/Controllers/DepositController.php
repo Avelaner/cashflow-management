@@ -15,7 +15,6 @@ class DepositController extends Controller
 
     private CustomerService $customerService;
 
-
     public function __construct()
     {
         $this->depositService =
